@@ -1,0 +1,29 @@
+.image-grid {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.v-2 {
+    /* grid-row: span 2; */
+    grid-row-start: span 2;
+    grid-row-end: auto;
+}
+
+.h-2 {
+    /* grid-column: span 2; */
+    grid-column-start: span 2;
+    grid-column-end: auto;
+}
+
+.v-h-2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
