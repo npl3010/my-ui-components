@@ -1,12 +1,11 @@
-# my-ui-components
-
-
 # LEARNING:
-## Notes - Units:
+
+## CSS - Units:
 > fr.
 
+## CSS - Grid:
 
-## Notes - Properties:
+### 1. Properties:
 > display: grid;
 
 > grid-template-columns: __;
@@ -17,30 +16,31 @@
 
 > grid-template-rows: __;
 
-> gap: __;
-
-> grid-column: __;
-
-Is a shorthand property for: grid-column-start, grid-column-end.
-
-- grid-column: 1 / 3;
-- grid-column: 1 / span 2; // This is the same as "grid-column: 1 / 3;".
-
-> grid-row: __;
-
-Is a shorthand property for: grid-row-start, grid-row-end.
-
 > grid-template-areas: __;
 - grid-template-areas:
     'header header header'
     'menu main main'
     'menu footer footer';
+  - The values "header", "menu", "main", "footer" are all specified by user.
+
+> gap: __;
+
+> grid-column: __;
+<!-- -->
+Is a shorthand property for: grid-column-start, grid-column-end.
+- grid-column: 1 / 3;
+- grid-column: 1 / span 2;
+  - This is the same as "grid-column: 1 / 3;".
+
+> grid-row: __;
+<!-- -->
+Is a shorthand property for: grid-row-start, grid-row-end.
 
 > grid-area: __;
 - grid-area: header;
+  - The values "header" is predefined by user.
 
-
-## Others:
+### 2. Others:
 > Grid track (track line):
 - Start from 1 (left to right).
 - Start from -1 (right to left).
@@ -48,6 +48,22 @@ Is a shorthand property for: grid-row-start, grid-row-end.
 - A track line bettween two columns is called "column line".
 - A track line bettween two rows is called "row line".
 
+## CSS - 2D/3D Transforms:
+
+### 1. Properties:
+> perspective: __;
+
+> perspective-origin: __;
+
+> transform: __;
+
+> transform-origin: __;
+
+> transform-style: __;
+
 
 # COMPONENTS:
+
 ## Image grid.
+
+## Parallax.
